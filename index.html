@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Dada Boudi Hotel</title>
+    <meta name="title" content="Dada Boudi Hotel" />
+    <meta name="description" content="Dada Boudi Hotel Website" />
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/dadaboudi-logo.png"
+      type="image/svg+xml"
+    />
+
+    <!--Font-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Tailwind CSS-->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--
+      Swiper Css
+    -->
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload>
+      <div class="circle"></div>
+      <p class="text">Dada Boudi</p>
+    </div>
+
+    <!-- 
+    - #TOP BAR
+  -->
+
+    <div
+      class="topbar"
+      style="background-color: white; color: black; margin-bottom: 0"
+    >
+      <div class="container">
+        <address class="topbar-item">
+          <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">
+            1, Ghoshpara Rd, Barrackpore, West Bengal 700120
+          </span>
+        </address>
+
+        <div class="separator"></div>
+
+        <div class="topbar-item item-2">
+          <div class="icon">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">Daily : 11.00 am to 11.00 pm</span>
+        </div>
+
+        <a href="tel:+91 9831318010" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">+91 9831318010</span>
+        </a>
+
+        <div class="separator"></div>
+
+        <a href="mailto:info@dadaboudihotel.com" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">info@dadaboudihotel.com</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header
+      class="header"
+      style="background-color: white; color: black; padding: 0; margin-top: 0"
+      data-header
+    >
+      <div class="container" id="root">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/dadaboudi-logo.png"
+            width="160"
+            height="50"
+            alt="dadaboudi-logo - Home"
+          />
+        </a>
+
+        <nav class="navbar" id="main-nav" class="side-bar" data-navbar>
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/dadaboudi-logo.png"
+              width="160"
+              height="50"
+              alt="dadaboudi - Home"
+            />
+          </a>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a
+                href="/"
+                class="navbar-link hover-underline active"
+                onclick="route()"
+              >
+                <div class="separator"></div>
+
+                <span class="span">Home</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a
+                href="/menu"
+                class="navbar-link hover-underline"
+                onclick="route()"
+              >
+                <div class="separator"></div>
+
+                <span class="span">Menus</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">About Us</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#enquiry-contact" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Catering</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#enquiry-contact" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Visit Us</p>
+
+            <address class="body-4">
+              1, Ghoshpara Rd, Barrackpore, <br />
+              West Bengal 700120
+            </address>
+
+            <p class="body-4 navbar-text">Open: 11.00 am - 11.00 pm</p>
+
+            <a href="info@dadaboudihotel.com" class="body-4 sidebar-link"
+              >info@dadaboudihotel.com</a
+            >
+
+            <div class="separator"></div>
+
+            <p class="contact-label">Booking Request</p>
+
+            <a
+              href="tel:+88123123456"
+              class="body-1 contact-number hover-underline"
+            >
+              +91 9831318010
+            </a>
+          </div>
+        </nav>
+
+        <a href="#enquiry-contact" class="btn btn-secondary">
+          <span class="text text-1">Enquiry</span>
+
+          <span class="text text-2" aria-hidden="true">Enquiry</span>
+        </a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #MENU
+      -->
+
+        <section
+          class="section menu"
+          aria-label="menu-label"
+          id="menu"
+          style="margin-top: 190px"
+        >
+          <div class="container">
+            <p class="section-subtitle text-center label-2">Delicious Menu</p>
+
+            <h2 class="headline-1 section-title text-center">Our Menu</h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Mutton Biriyani</a>
+                      </h3>
+
+                      <span class="badge label-1">Best Seller</span>
+
+                      <span class="span title-2">₹320</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Chicken Biriyani</a>
+                      </h3>
+
+                      <span class="span title-2">₹240</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title"
+                          >Fish Fry (Kolkata Bhetki)</a
+                        >
+                      </h3>
+
+                      <span class="span title-2">₹140</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Firni</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">₹140</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-5.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Olivas Rellenas"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Mutton Thali</a>
+                      </h3>
+
+                      <span class="span title-2">₹300</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Avocados with crab meat, red onion, crab salad stuffed red
+                      bell pepper and green bell pepper.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-6.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Opu Fish"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Chicken Reshmi Kabab</a>
+                      </h3>
+
+                      <span class="span title-2">₹170</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <p class="menu-text text-center">
+              Open from <span class="span">11:00 am</span> to
+              <span class="span">11:00 pm</span>
+            </p>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">View All Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View All Menu</span>
+            </a>
+
+            <img
+              src="./assets/images/shape-5.png"
+              width="921"
+              height="1036"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2 move-anim"
+            />
+            <img
+              src="./assets/images/shape-6.png"
+              width="343"
+              height="345"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-3 move-anim"
+            />
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer
+      class="footer section has-bg-image text-center"
+      style="background-image: url('./assets/images/footer-bg.jpg')"
+    >
+      <div class="container">
+        <div class="footer-top grid-list">
+          <div class="footer-brand has-before has-after">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/dadaboudi-logo.png"
+                width="320"
+                height="100"
+                loading="lazy"
+                alt="dada boudi home"
+              />
+            </a>
+
+            <address class="body-4">
+              1, Ghoshpara Rd, Barrackpore, West Bengal 700120
+            </address>
+
+            <a href="info@dadaboudihotel.com" class="body-4 contact-link"
+              >info@dadaboudihotel.com</a
+            >
+
+            <a href="tel:+919831318010" class="body-4 contact-link"
+              >Booking Request : +91 9831318010</a
+            >
+
+            <p class="body-4">Open : 11:00 am - 11:00 pm</p>
+
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+
+            <p class="title-1">Get News & Offers</p>
+
+            <p class="label-1">
+              Subscribe us & Get <span class="span">Exclusive discounts.</span>
+            </p>
+
+            <form action="" class="input-wrapper" id="subscribe_form">
+              <div class="icon-wrapper">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                <input
+                  type="email"
+                  name="subscriber_name"
+                  placeholder="Your email"
+                  autocomplete="off"
+                  class="input-field"
+                  id="subscriber_name"
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-secondary"
+                id="subscribe_button"
+              >
+                <span class="text text-1">Subscribe</span>
+
+                <span class="text text-2" aria-hidden="true">Subscribe</span>
+              </button>
+            </form>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <a href="#home" class="label-2 footer-link hover-underline"
+                >Home</a
+              >
+            </li>
+
+            <li>
+              <a href="#menu" class="label-2 footer-link hover-underline"
+                >Menus</a
+              >
+            </li>
+
+            <li>
+              <a href="#about" class="label-2 footer-link hover-underline"
+                >About Us</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#enquiry-contact"
+                class="label-2 footer-link hover-underline"
+                >Enquiry</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#enquiry-contact"
+                class="label-2 footer-link hover-underline"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <a
+                href="https://www.facebook.com/officialdadaboudihotel?mibextid=LQQJ4d"
+                target="_blank"
+                class="label-2 footer-link hover-underline"
+                >Facebook</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.instagram.com/dadaboudihotelofficial/"
+                target="_blank"
+                class="label-2 footer-link hover-underline"
+                >Instagram</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://twitter.com/dadaboudi1963"
+                target="_blank"
+                class="label-2 footer-link hover-underline"
+                >Twitter</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.youtube.com/@DadaBoudiHotelOfficial"
+                target="_blank"
+                class="label-2 footer-link hover-underline"
+                >Youtube</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://maps.app.goo.gl/t1a5GCTBYUQfF4Xe8"
+                target="_blank"
+                class="label-2 footer-link hover-underline"
+                >Google Map</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 Dada Boudi Hotel. All Rights Reserved | Crafted by
+            <a href="https://www.rvssgroup.com/" target="_blank" class="link"
+              >RVSS PVT Ltd.</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("9GXzUSKDbifoGFlH_");
+    </script>
+  </body>
+</html>
